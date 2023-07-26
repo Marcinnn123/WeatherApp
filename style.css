@@ -12,8 +12,7 @@ body {
   width: 100%; 
   max-width: 800px;
   background: linear-gradient(135deg, #c2c2c2, #a0a0a0); 
-  color: #333; 
-  margin: 100px; 
+  color: #333;  
   border-radius: 5px;
   padding: 40px 35px;
   text-align: center;
@@ -87,8 +86,7 @@ body {
 
 .col {
   display: flex;
-  align-items: center;
-  text-align: left;
+  text-align: center;
 }
 
 .col img {
@@ -96,8 +94,8 @@ body {
   margin-right: 10px;
 }
 
-.humidity .wind {
-  font-size: 28px;
+.tempMin .tempMax {
+  font-size: 10%;
   margin-top: -6px;
 }
 

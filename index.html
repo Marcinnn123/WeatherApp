@@ -22,17 +22,15 @@
                 <h2 class="city"></h2>
                 <div class="details">
                     <div class="col">
-                        <img src="img/humidity.png">
                         <div>
-                            <p class="humidity"></p>
-                            <p>Humidity</p>
+                            <p class="tempMin"></p>
+                            <p>Minimum Temperature</p>
                         </div>
                     </div>
                     <div class="col">
-                        <img src="img/wind.png">
                         <div>
-                            <p class="wind"></p>
-                            <p>Wind Speed</p>
+                            <p class="tempMax"></p>
+                            <p>Maximum Temperature</p>
                         </div>
                     </div>
                 </div>
@@ -58,8 +56,8 @@
                 console.log(data);
                 document.querySelector(".city").innerHTML = data.name;
                 document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
-                document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
-                document.querySelector(".wind").innerHTML = data.wind.speed + " Km/h";
+                document.querySelector(".tempMin").innerHTML = Math.round(data.main.temp_min) + "°C";
+                document.querySelector(".tempMax").innerHTML = Math.round(data.main.temp_max) + "°C";
                 switch (data.weather[0].main) {
                     case "Clouds":
                         iconChange.src = "./img/clouds.png";

@@ -1,7 +1,9 @@
 
 
 body {
-  background: #333; 
+  background-image: url("img/back.jpg");
+  background-size: cover;
+  background-position: center; 
   display: flex;
   justify-content: center;
   align-items: center;
